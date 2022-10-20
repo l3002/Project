@@ -6,7 +6,7 @@ def httpPort="8090"
 pipeline{
 	agent any
 	tools{
-		maven mvn
+		mvn
 	}
 	stages{
 		stage('Git Checkout'){

@@ -31,7 +31,7 @@ class Main {
         }
         else{
             System.out.println("Congratulations, this is the right number");
-	    System.out.println("/***>>>>>>>>>>>>>><<<<<<<<<<<<<<<***\");
+	    System.out.println();
         }
     }
 }

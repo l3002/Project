@@ -13,6 +13,7 @@ pipeline{
 		}
         	stage('Build'){
 			steps{
+				sh 'export PATH="$PATH:/root/apache-maven-3.8.6/bin"'
             			sh "mvn clean install"
 			}
         	}

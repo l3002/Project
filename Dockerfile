@@ -4,6 +4,4 @@ COPY target/*.jar /app/
 
 WORKDIR /app/
 
-EXPOSE 8090
-
-ENTRYPOINT [ "java", "-jar", "/app/*.jar"]
+CMD [ "java", "-jar", "/app/*.jar"]

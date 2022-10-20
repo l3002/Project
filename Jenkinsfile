@@ -1,7 +1,7 @@
 def containerName="docker-pipeline"
 def tag="latest"
 def dockerHubUser="jatinsharma123"
-def httpPort="8090"
+def httpPort="80"
 
 pipeline{
 	agent any

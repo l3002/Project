@@ -1,5 +1,9 @@
-FROM openjdk:11
-COPY src/main/java/com/app/* /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac GuessNum.java
-CMD ["java", "GuessNum"]
+FROM openjdk
+
+COPY target/*.jar /app/
+
+WORKDIR /app/
+
+EXPOSE 8090
+
+ENTRYPOINT [ "java", "-jar", "/app/*.jar"]

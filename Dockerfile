@@ -1,7 +1,3 @@
-FROM openjdk
+FROM 
 
-COPY target/*.jar /app/
-
-WORKDIR /app/
-
-CMD [ "java", "-jar", "/app/*.jar"]
+COPY ./index.html /usr/share/nginx/html
